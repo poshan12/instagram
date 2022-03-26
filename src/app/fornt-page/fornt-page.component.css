@@ -1,0 +1,33 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+    border-color: #FAFAFA;
+    min-height: calc(100vh - 50px);
+  }
+  
+  .left-section{
+    float: left;
+    width: 50%;
+    position: relative;
+    padding-top: 60px;
+    padding-left: 100px;
+  }
+  .right-section{
+    float: left;
+    width: 50%;
+    position: relative;
+    padding-top: 60px;
+    padding-left: 100px;
+  }
+
+  .ImageData{
+    height: 500px;
+    overflow: auto;
+    cursor: pointer;
+  }
+  
+  .image-border{
+    border: 1px solid black;
+  }

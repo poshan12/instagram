@@ -1,0 +1,34 @@
+<div class="flex-container">
+    <div class="left-section">
+        <div class="ImageData">
+            <div *ngFor="let row of allData"  >
+                <div class="img" (click)="onSubmit(row.Image)">
+                    <img class="image-border" src={{row.Image}}  height="200" width="300"/>
+                </div>
+                <div>
+                    <img src="../../assets/like.png"  width="30" height="20"/> {{row.likes}}
+                </div>
+                <div>
+                    {{row.timestamp}}
+                </div>
+            </div>
+        </div>
+       
+        <!-- <table>
+           <tr *ngFor="let row of allData">
+            <td> 
+                {{row.likes}}
+            </td>
+            
+           </tr> 
+        </table> -->
+    </div>
+    <div class="right-section">
+        <div  *ngIf="isValid">
+                <img src={{imgSrc}}  width="400" height="400"/>
+        </div>
+        <div  *ngIf="!isValid">
+            <h1> Click on Image</h1>
+        </div>
+    </div>
+    </div>
